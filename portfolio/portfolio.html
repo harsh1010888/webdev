@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>harsh omar's portfolio site</title>
+<style>
+    *{
+        margin :0;
+        padding:2px;
+          
+    }
+    body {
+        background-color: rgb(53, 17, 25);
+
+       color : white;
+       font-family: 'Courier New', Courier, monospace;
+    }
+    nav{
+         display :flex;
+          justify-content: space around;
+         align-items: center;
+         height:80px;
+         background-color: rgb(0, 0, 0) ;
+         font-size :large;
+          font-style: background-color : white;
+    }
+
+    nav ul{
+        display:flex;
+        justify-content: center;       
+
+    }
+    nav ul ol a{
+        list-style: none;
+        text-decoration: none;
+        color:white;
+        font-size: medium;;
+    }
+    nav ul ol a:hover{
+        color: rgb(254, 245, 60);
+        font-size:1.2rem;
+        transform: translate(5px, 5px);
+        
+    }
+    .left
+    {
+        font-size:2 rem;
+        width: 30%;
+    }
+    .right
+    {
+        font-size: 1 rem;
+        width:60%;
+        display:flex;
+}
+    
+.first
+    {
+        display : flex;
+        justify-content:space-around;
+        margin :23px 0;
+    }
+
+        .leftsection
+        {
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 30%;
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 3%;
+       }
+
+    
+    .rightsection 
+    {
+
+        width:  60%;
+    }
+    
+    .secondsection
+    {
+        font-size: 1rem;;
+        background-color: rgb(51, 0, 7);
+        height :70vh;
+    }
+
+    .box {
+        background:rgb(136, 93, 157);
+        width: 80vw;
+        height:1px;
+        margin: 3px 0;
+    }
+.verticals{
+           height :5px;
+           width:1px;
+           background-color:rgb(136, 93, 157);
+           margin:;
+           margin:0 31px;
+           height:60px;
+           display:flex;
+    }
+    .verticallines
+    {
+     font-size: 0.5 rem;
+    position: relative;
+    top: 160px;
+    right:100px;
+    font-size:medium;
+ 
+    
+    }
+    .verticaltext
+    {
+     font-size: 1rem ;
+    position: relative;
+    top: 60px;
+    left: -40px;
+    font-size :large
+    }
+
+    .thirdsection{
+        font-size: 1.0rem;
+        background-color: rgb(36, 2, 6);
+        height :80vh;
+        padding:20px;
+    }
+.p1
+{   position :relative;
+    left:70px;
+    text-align: justify;
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    color:rgb(227, 255, 150);
+    align-items: center; 
+    background-color: rgb(88, 34, 34);
+    box-shadow: 0 4px 8px rgb(240, 234, 65);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.p1:hover {
+    background-color: #cf9c24;
+    box-shadow: 0 8px 16px rgba(255, 27, 27, 0.3);
+    transform: translate(10px, 20px);
+}
+.p2
+{
+    position: relative;
+    top:70px;
+    bottom:50px;
+    left:70px;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(88, 34, 34);
+    border-radius: 30px;
+    color:rgb(228, 223, 173);
+    box-shadow: 0 4px 8px rgb(240, 234, 65);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.p2:hover {
+    background-color: #cf9c24;
+    box-shadow: 0 8px 16px rgba(255, 27, 27, 0.3);
+    transform: translate(10px, 20px);
+}
+.p3{
+    position: relative;
+
+   bottom :50px;
+   left:390px;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(88, 34, 34);
+    border-radius: 30px;
+      color:rgb(202, 171, 231);
+    box-shadow: 0 4px 8px rgb(240, 234, 65);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.p3:hover {
+    background-color: #cf9c24;
+    box-shadow: 0 8px 16px rgba(255, 27, 27, 0.3);
+    transform: translate(10px, 20px);
+}
+.p4{
+    position: relative;
+    bottom:420px;
+    left :380px;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(88, 34, 34);
+    border-radius: 30px;
+    color:rgb(224, 107, 107);
+    box-shadow: 0 4px 8px rgb(240, 234, 65);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.p4:hover {
+    background-color: #cf9c24;
+    box-shadow: 0 8px 16px rgba(255, 27, 27, 0.3);
+    transform: translate(10px, 20px);
+}
+.resume
+{
+    position: relative;
+    text-align: center;
+    font-size:2rem;
+   top:400px;
+   left:-320px;
+    width: 250px;
+    height: 100px;
+    background-color: rgb(88, 34, 34);
+    border-radius: 30px;
+      color:rgb(202, 171, 231);
+    box-shadow: 0 4px 8px rgb(240, 234, 65);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.resume:hover {
+    background-color: #cf9c24;
+    box-shadow: 0 8px 16px rgba(255, 27, 27, 0.3);
+    transform: translate(10px, 20px);
+}
+
+.footer {
+    width :100%;
+    color: rgb(166, 217, 37);
+    font-size:2rem;
+    background-color: rgb(27, 1, 1);
+    text-align: justify;
+}
+ </style>
+         </head>
+<body>
+    <header>
+  
+        <nav>
+            <div class="left"><h1></h1> Harsh omar's Portfolio site </h1></div>
+            <div class = "right"> 
+                <ul>
+                   
+                    <ol><a href="#Projects">Projects</a></ol>
+                    <ol><a href="Contact.html">Contact</a></ol>
+                    <ol><a href="certifiactes"> Certificates</a></ol>
+
+                </ul>
+            </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class= "first">
+                <div class ="leftsection">
+                   <H1> ABOUT ME </H1>
+                   <BR> 
+<H3>
+Hi, I'm Harsh Omar, currently pursuing a Bachelor's degree in Computer Science. Welcome to my portfolio!
+Here, you'll find detailed information about me, including my projects, skills, and experiences. 
+I have hands-on experience in web development, particularly with the MERN stack. Below, you'll
+ also find links to my coding profiles on various platforms, as well as some of my recent projects.</H3> </div>
+               
+ 
+ <div class="resume"> RESUME 
+ <a href="https://github.com/harsh1010888" target="ER"> DOWNLOAD  </a>
+ </div>
+
+<div class="rightsection"> 
+
+            <img src="bg.png" alt="" width="60%" height="%">
+                </div>  </section> <hr>
+
+            <section class="secondsection">
+                <h1> EXPERIENCE:
+                    </h1>
+                <span>What I have done till now!</span>
+               <br>
+               <br>
+               <br>
+               <br>
+             
+           
+         <div class="box"> </div>
+            
+ <div class ="verticals">
+
+    
+    <div class="verticaltext ">
+    SCHOOLING  
+    <span>2007-2021</span>   
+    </div>
+
+<div class="verticallines ">
+<span>ST. TERESA'S DAY SCHOOL</span>
+ <br>
+ <br>
+
+<span>ICSE BOARD</span></div>
+        
+<div class ="verticals"> 
+<div class="verticaltext ">
+<span>COLLEGE</span>
+       <br> 
+
+<span>2022-2026</span>
+</div></div> 
+<div class="verticallines ">
+<span>LLOYD INSTITUTE OF ENGINEERING AND TECH.</span>
+<br>
+<br>
+<span>COMPUTERS</span>
+                  
+</div>
+<div class ="verticals">
+<div class="verticaltext "> SKILLS  
+</div></div>
+ <div class="verticallines ">
+<span>WEB DEV : HTML,CSS,JAVASCRIPT,SQL.</span>
+<br><br>
+<span>FRAMEWORK:REACT JS,BOOTSTRAP.</span><br><br>
+<span>LANGUAGES:C,C++,JAVA, PYTHON.</span><br><br>
+<span>DATA STRUCTURES: 400+ PROBLEMS.</span> </div>
+<div class ="verticals"> 
+<div class="verticaltext ">
+INTERNSHIPS  
+</div>
+
+</div></section><hr> <section class="thirdsection">
+            <h1> CODING AND NETWROK PROFILE:</h1>
+            <BR>
+                <BR>
+                    <BR>
+                        
+
+            <div class="p1"><h1>LEETCODE</h1>
+            <a href="https://leetcode.com/harshjord10/" target="ER">  VIEW PROFILE </a>
+            </div>
+            <div class ="p2"><h1>CODE CHEF</h1>
+            
+            <a href="https://www.codechef.com/users/harsh247omar" target="ER">VIEW PROFILE </a>
+            
+            <div class="p3"><h1> LINKDIN </h1>
+            <a href="https://in.linkedin.com/in/harsh-omar-4865a0203" target="ER"> VIEW PROFILE </a>
+</div>
+            <div class="p4"><h1>GITHUB</h1>
+            <a href="https://github.com/harsh1010888" target="ER"> VIEW PROFILE</a>
+        </div>
+            <hr>
+        </main>
+        <footer class="footer">
+            <p>Thanks for visiting my portoflio</p>
+            
+        </footer>
+       
+</body>
+</html>
