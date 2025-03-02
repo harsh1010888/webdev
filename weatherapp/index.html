@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter city name" spellcheck="false">
+            <button><img src="images/search.png" alt="Search"></button>
+        </div>
+        
+        <div class="weather">
+            <img src="images/clear.png" class="weather-icon" alt="Weather Icon"> 
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">New York</h2>
+
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity.png" alt="Humidity Icon">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img src="images/wind.png" alt="Wind Icon">
+                    <div>
+                        <p class="wind">10 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const apiKey = "2333280465da8587e551881700be0cb3";
+        const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q="; 
+        const searchBox = document.querySelector(".search input");
+        const searchBtn = document.querySelector(".search button");
+
+        async function checkWeather(city) {
+            try {
+                const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
+                if (!response.ok) {
+                    throw new Error("City not found");
+                }
+                
+                const data = await response.json();
+                console.log("Weather Data:", data); //  Debugging purpose
+
+              // Update Weather Data
+                document.querySelector(".temp").textContent = `${data.main.temp}°C`;
+                document.querySelector(".city").textContent = data.name;
+                document.querySelector(".humidity").textContent = data.main.humidity + "%";
+                document.querySelector(".wind").textContent = data.wind.speed + " km/h";
+
+            } catch (error) {
+                console.error("Error fetching weather data:", error);
+                alert("❌ Incorrect city name! Please enter a valid city."); 
+            }
+        }
+
+        searchBtn.addEventListener("click", () => {
+            if (searchBox.value.trim() !== "") {
+                checkWeather(searchBox.value);
+            }
+        });
+
+        checkWeather("Delhi"); // ✅ Default city on load
+    </script>
+    
+</body>
+</html>
