@@ -1,0 +1,5 @@
+body { font-family: Arial, sans-serif; padding:12px; width:240px; }
+h3 { margin:0 0 8px 0; font-size:16px; }
+label { display:block; margin:8px 0; font-size:13px; }
+input[type="number"]{ margin-left:6px; }
+button{ margin-top:6px; padding:6px 8px; cursor:pointer; }

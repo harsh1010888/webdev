@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "main",
+  "version": "1.0",
+  "description": "Blur homepage videos and auto-scroll Shorts to avoid getting distracted.",
+  "permissions": ["storage", "scripting", "activeTab"],
+  "host_permissions": ["*://www.youtube.com/*"],
+  "action": {
+    "default_title": "YouTube Focus",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
