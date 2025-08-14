@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LocalStorage Example</title>
+</head>
+<body>
+
+<!-- <script>
+  // dummy  code to know the local
+  // storage working 
+  //local storage and session storage..
+   
+    localStorage.setItem('username', 'harsh');
+    const user = localStorage.getItem('username');
+    console.log('username', user);
+
+    
+    const fruits = ['apple', 'banana', 'orange', 'grapes'];
+    for (let i = 0; i < fruits.length; i++) {
+        localStorage.setItem('fruit_' + i, fruits[i]);
+    }
+
+    for (let i = 0; i < fruits.length; i++) {
+        const storedItem = localStorage.getItem('fruit_' + i);
+        console.log(storedItem);
+    }
+</script> -->
+
+<input type="text" id="input" placeholder="Enter task">
+<button id="add">Add</button>
+<ul id="ul"></ul>
+
+<script>
+    let add = document.getElementById('add');
+    let input = document.getElementById('input');
+    let ul = document.getElementById('ul');
+
+    let tasks;
+
+    
+    if (localStorage.getItem('tasks') != null) {
+        tasks = localStorage.getItem('tasks').split(',');
+    } else {
+        tasks = [];
+    }
+
+    
+    function display() {
+        ul.innerHTML = '';
+        for (let i = 0; i < tasks.length; i++) {
+            ul.innerHTML += `<li>${tasks[i]} <button onclick="deleteTask(${i})">Delete</button></li>`;
+        }
+    }
+
+
+    add.addEventListener('click', function() {
+        let value = input.value;
+        if (value.trim() !== "") {
+            tasks.push(value);
+            localStorage.setItem('tasks', tasks.join(','));
+            display();
+            input.value = '';
+        }
+    });
+
+    
+    function deleteTask(index) {
+        tasks.splice(index, 1);
+        localStorage.setItem('tasks', tasks.join(','));
+        display();
+    }
+
+    
+    display();
+</script>
+
+</body>
+</html>
