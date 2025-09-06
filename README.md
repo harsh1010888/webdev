@@ -1,4 +1,12 @@
 # 🌦️ Weather App  
+<img width="1919" height="836" alt="Screenshot 2025-09-06 225755" src="https://github.com/user-attachments/assets/77509c04-c3c5-465b-badc-1d6e5eaff3f6" />
+
+
+
+
+https://github.com/user-attachments/assets/e9ea236d-ecfc-4321-be2f-64f80b0e2eef
+
+
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/your-badge-id/deploy-status)](https://weatherapptubular-cranachan-025f2c.netlify.app/)
 
