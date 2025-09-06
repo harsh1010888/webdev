@@ -1,6 +1,16 @@
 # 🌐 Live Demo:  
 🔗 **[Image Search Engine](https://imagesearchengineapicall.netlify.app/)**  
 
+
+
+<img width="1904" height="899" alt="Screenshot 2025-09-06 225254" src="https://github.com/user-attachments/assets/f91dff86-12e4-4a11-bebf-6d5be43ed4f4" />
+
+
+
+https://github.com/user-attachments/assets/f47c2d09-08cb-45b5-8355-028c66bf08ae
+
+
+
 # 🌟 Image Search Engine - Powered by Unsplash API 🚀  
 
 This is a simple yet powerful **image search website** that allows users to find high-quality images using the **Unsplash API**. The project is built using **HTML, CSS, and JavaScript**, making it a lightweight and responsive web app.  
@@ -21,4 +31,5 @@ This is a simple yet powerful **image search website** that allows users to find
 ---
 
 ### 🚀 **This project is great for understanding API integration in JavaScript and learning how to deploy a web app using Netlify.** 💡  
+
 
