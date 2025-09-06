@@ -34,8 +34,6 @@ This is a simple **Weather App** that fetches real-time weather data using an AP
 2. Click the **Search** button to fetch weather details.  
 3. View temperature, humidity, and wind speed instantly.  
 
-## 🖼️ Screenshot  
-![Weather App Screenshot](https://your-screenshot-link.com)  
 
 ## 📌 Deployment  
 This project is deployed on **Netlify**. You can visit the live version here:  
@@ -44,4 +42,3 @@ This project is deployed on **Netlify**. You can visit the live version here:
 ## 🏗️ How to Run Locally  
 1. Clone the repository:  
    ```sh
-   git clone https://github.com/your-username/weather-app.git
